@@ -5,8 +5,8 @@ public class Ponchik extends Char{
         super("Пончик", "");
     }
     @Override
-    public void Action(String act, String name, String user){
-        System.out.println(name + act + user + "было правдой");
+    public void Action(String act, String user){
+        System.out.println(this.name + act + user + "было правдой");
 
     }
     

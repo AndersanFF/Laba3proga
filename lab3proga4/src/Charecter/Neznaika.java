@@ -12,8 +12,8 @@ public class Neznaika extends Char{
         
     }
     @Override
-    public void Action(String act, String name){
-        System.out.println(name + act);
+    public void Action(String act){
+        System.out.println(this.name + act);
     }
 
     

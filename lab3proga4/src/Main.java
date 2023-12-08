@@ -31,24 +31,26 @@ public class Main {
     Places homeland = new Homeland();
     Char typo_Chel = new Typo_Chel();
     Places barrel = new Barrel();
-
-    on.Action(" принес ", plate.GetName(), on.GetName());
-    on.Action(" Съел ","её ", on.GetAppearance());
-    ponchik.Action(" рассказал о ", ponchik.GetName(), neznaika.GetName());
+    
+    on.Action(" принес ", plate.GetName());
+    on.Action(" Съел ");
+    ponchik.Action(" рассказал о ", neznaika.GetName());
     dumb_Island.come(neznaika.GetName());
     bridge.come("Коротышки ");
     patrol.Capture("коротышек");
     los_paganos.come("их");
     hold.come("их");
     hold.were(" сотни ");
-    hundred.Action(" плачут ",hundred.GetName());
-    hundred.Action(hundred.GetAction(),hundred.GetName(), homeland.GetPlace());
-    neznaika.Action("заплакал", neznaika.GetName()); 
-    typo_Chel.Action(" встал на ", typo_Chel.GetName(), barrel.GetPlace());
-    typo_Chel.Action(" начал утешать", typo_Chel.GetName(), " всех ");
-    typo_Chel.Action(" был ", typo_Chel.GetName(), typo_Chel.GetAppearance());
-    neznaika.SetPlace(barrel);
+    hundred.Action(" плачут ");
+    hundred.SetPlace(homeland);
+    hundred.Action();
+    neznaika.Action("заплакал");
+    typo_Chel.SetPlace(barrel); 
+    typo_Chel.Action(" встал на ");
+    typo_Chel.Action(" начал утешать", " всех ");
+    typo_Chel.Action(" был ", typo_Chel.GetAppearance());
 
 
-    }  
+    } 
+     
 }

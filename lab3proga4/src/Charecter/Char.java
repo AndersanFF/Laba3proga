@@ -3,9 +3,9 @@ package Charecter;
 import Place.Places;
 
 public abstract class Char {
-    private String name;
-    private String appearance;
-    protected Places places;
+    protected String name;
+    protected String appearance;
+    protected String places;
     protected String sub;
     protected String action;
     
@@ -20,13 +20,19 @@ public abstract class Char {
     public void Action(String act, String name, String user){
 
     }
+    public void Action(String act){
+       
+    }
+    public void Action(){
+       
+    }
     public String GetName(){
         return name;
 
     }
 
     public void SetPlace(Places place){
-        this.places = place;
+        places = place.GetPlace();
     }
 
     public String GetAppearance(){
@@ -41,6 +47,13 @@ public abstract class Char {
     } 
     public String GetAction(){
         return this.action;
+    }
+    public String GetPlace(){
+        return places;
+    
+    }
+    public void Action(String act, String name, Places place){
+        System.out.println(name + act + place.GetPlace());
     }
     
 

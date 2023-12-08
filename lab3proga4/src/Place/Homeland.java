@@ -13,5 +13,7 @@ public class Homeland implements Places{
 
     }
     @Override
-    public void were(String name){}
+    public void were(String name){
+        
+    }
 }
