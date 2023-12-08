@@ -15,7 +15,7 @@ public class Patrol extends Char implements GosOrgan{
 
     @Override
     public void Capture(String target){
-        System.out.println(name +" поймал " + target);
+        System.out.println(GetName() +" поймал " + target);
     }
     
 }

@@ -6,5 +6,12 @@ public class Homeland implements Places{
     public void come(String name){
 
     }
-    
+
+    @Override
+    public String GetPlace(){
+        return place;
+
+    }
+    @Override
+    public void were(String name){}
 }

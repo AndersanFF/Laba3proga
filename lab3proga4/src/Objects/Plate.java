@@ -1,8 +1,11 @@
 package Objects;
 
-public class Plate extends Object{
+public class Plate extends Objects{
     public Plate(){
-        super("Тарелка каши");
+        super("тарелка каши");
+    }
+    public String GetName(){
+        return name;
     }
     
 }
